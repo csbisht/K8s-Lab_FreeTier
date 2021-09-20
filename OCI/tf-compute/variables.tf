@@ -7,5 +7,6 @@ variable "compartment_id" {}
 variable "subnet_id" {}
 variable "source_id" {}
 variable "shape" {}
-variable "display_name" {}
-variable "ssh_pub_key_path" {}
+variable "display_name_master" {}
+variable "display_name_node" {}
+variable "ssh_pub_key" {}

@@ -14,7 +14,8 @@ source_id          = "ocid1.image.oc1.ap-mumbai-1.aaaaaaaajohn5cjow425zcawzsmjpy
 shape              = "VM.Standard.E2.1.Micro"
 
 ###set the VM instance name here.
-display_name       = "K8s_master"
+display_name_master       = "K8s_master"
+display_name_node         = "K8s_node"
 
 ###set ssh key path here to connect your VM instances
-ssh_pub_key_path   = "~/K8s-Cluster-Infra/OCI/tf-compute/oci_key/K8s_test.pub"
+ssh_pub_key               = "~/K8s-Cluster-Infra/OCI/tf-compute/oci_key/K8s_test.pub"
