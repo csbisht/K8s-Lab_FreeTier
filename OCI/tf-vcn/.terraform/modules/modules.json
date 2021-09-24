@@ -1,0 +1,1 @@
+{"Modules":[{"Key":"default-vcn","Source":"oracle-terraform-modules/default-vcn/oci","Version":"1.0.1","Dir":".terraform/modules/default-vcn"},{"Key":"vcn","Source":"oracle-terraform-modules/default-vcn/oci","Version":"1.0.1","Dir":".terraform/modules/vcn"},{"Key":"","Source":"","Dir":"."}]}
