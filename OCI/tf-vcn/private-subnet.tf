@@ -5,7 +5,8 @@ resource "oci_core_subnet" "vcn-private-subnet"{
   # Required
   compartment_id = "${var.compartment_id}"
   vcn_id = module.vcn.vcn_id
-  cidr_block = "10.0.254.0/24"
+  ##cidr_block = "10.0.254.0/24"
+  cidr_block = "${var.private_subnet_cidr_block}"
  
   # Optional
   # Caution: For the route table id, use module.vcn.nat_route_id.
