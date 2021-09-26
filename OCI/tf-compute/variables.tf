@@ -10,3 +10,4 @@ variable "shape" {}
 variable "display_name_master" {}
 variable "display_name_node" {}
 variable "ssh_pub_key" {}
+variable "ssh_private_key" {}

@@ -7,7 +7,7 @@ compartment_id     = "ocid1.compartment.oc1..aaaaaaaavcmcjq7mduuwofp67mex2wr7ld5
 
 ###add your subnet ocid here to setup the vm instances
 #subnet_id          = "<YOUR SUBNET OCID>"
-subnet_id          = "ocid1.subnet.oc1.ap-mumbai-1.aaaaaaaabz5flmff3c4ege7jhqb4tlvldeyil6v7re2tygujb4tfec35b3sa"
+subnet_id          = "ocid1.subnet.oc1.ap-mumbai-1.aaaaaaaahvosq3enb6v76jn4ueu4d5qcj72si4x575lrwdkcaod4a3465dka"
 
 ###select your OS image id here. ##Canonical-Ubuntu-20.04-2021.08.26-0 
 source_id          = "ocid1.image.oc1.ap-mumbai-1.aaaaaaaajohn5cjow425zcawzsmjpyc7nekdm4emyjvd5vyvfe5obfa675ta"
@@ -22,4 +22,4 @@ display_name_node         = "K8s_node"
 
 ###set ssh key path here to connect your VM instances
 ssh_pub_key               = "~/K8s-Cluster-Infra/OCI/oci_key/K8s_test.pub"
-
+ssh_private_key           = "~/K8s-Cluster-Infra/OCI/oci_key/K8s_test"
