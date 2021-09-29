@@ -6,7 +6,7 @@ region             = "ap-mumbai-1"
 compartment_id     = "ocid1.compartment.oc1..aaaaaaaavcmcjq7mduuwofp67mex2wr7ld53vt3hurk5c5ygd7lbiw5awbtq"
 
 ###add your subnet ocid here to setup the vm instances
-subnet_id          = "<YOUR SUBNET OCID>"
+subnet_id          = "ocid1.subnet.oc1.ap-mumbai-1.aaaaaaaa2voqwxkqqtxg6hclzttj2yyjfrh4i7n6cbepofclrevoapdtv5hq"
 
 ###select your OS image id here. ##Canonical-Ubuntu-20.04-2021.08.26-0 
 source_id          = "ocid1.image.oc1.ap-mumbai-1.aaaaaaaajohn5cjow425zcawzsmjpyc7nekdm4emyjvd5vyvfe5obfa675ta"
@@ -15,7 +15,6 @@ source_id          = "ocid1.image.oc1.ap-mumbai-1.aaaaaaaajohn5cjow425zcawzsmjpy
 shape              = "VM.Standard.E2.1"
 
 ###set the VM instance name here.
-display_name_master       = "K8s_master"
 display_name_node         = "K8s_node"
 
 ###set ssh key path here to connect your VM instances

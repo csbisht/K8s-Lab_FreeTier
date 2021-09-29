@@ -12,9 +12,9 @@ vcn_cidr                 = "10.0.0.0/16"
 ###vcn domain name
 vcn_dns_label            = "vcnk8s"
 
-###private subnet cidr block here
+###private subnet cidr block and name here
 private_subnet_cidr_block = "10.0.254.0/24"
+private-subnet-name       = "k8s-private-subnet"
 
-###security-list for private/public subnet name
+###security-list for private subnet name
 security_list_private_subnet_name   = "k8s-security-list-private-subnet"
-security_list_public_subnet_name    = "k8s-security-list-public-subnet"

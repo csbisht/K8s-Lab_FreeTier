@@ -54,3 +54,4 @@ sudo systemctl daemon-reload
 sudo systemctl restart docker
 
 sudo systemctl restart containerd
+sudo iptables -F

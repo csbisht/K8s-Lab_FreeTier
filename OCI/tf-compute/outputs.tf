@@ -42,37 +42,29 @@ output "time-created-master" {
 
 # Outputs for compute instance public ip
 output "public-ip-for-compute-instance-node" {
-  value = oci_core_instance.ubuntu_instance_node.public_ip
+  value = oci_core_instance.ubuntu_instance_node.*.public_ip
 }
 
 output "instance-name-node" {
-  value = oci_core_instance.ubuntu_instance_node.display_name
+  value = oci_core_instance.ubuntu_instance_node.*.display_name
 }
 
 output "instance-OCID-node" {
-  value = oci_core_instance.ubuntu_instance_node.id
+  value = oci_core_instance.ubuntu_instance_node.*.id
 }
 
 output "instance-region-node" {
-  value = oci_core_instance.ubuntu_instance_node.region
+  value = oci_core_instance.ubuntu_instance_node.*.region
 }
 
 output "instance-shape-node" {
-  value = oci_core_instance.ubuntu_instance_node.shape
+  value = oci_core_instance.ubuntu_instance_node.*.shape
 }
 
 output "instance-state-node" {
-  value = oci_core_instance.ubuntu_instance_node.state
-}
-
-output "instance-OCPUs-node" {
-  value = oci_core_instance.ubuntu_instance_node.shape_config[0].ocpus
-}
-
-output "instance-memory-in-GBs-node" {
-  value = oci_core_instance.ubuntu_instance_node.shape_config[0].memory_in_gbs
+  value = oci_core_instance.ubuntu_instance_node.*.state
 }
 
 output "time-created-node" {
-  value = oci_core_instance.ubuntu_instance_node.time_created
+  value = oci_core_instance.ubuntu_instance_node.*.time_created
 }
