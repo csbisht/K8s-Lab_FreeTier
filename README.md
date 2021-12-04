@@ -62,10 +62,7 @@ ssh -i K8s-Lab/OCI/oci_key/K8s_test ubuntu@<your jump's PublicIp>
 **10) You have three K8s clusters in this Lab (cluster1, cluster2 and cluster3) and all clusters KUBECONFIG files are kept in $HOME/.kube, and you can use below command to connect your clusters.**
 ```
 export KUBECONFIG=$HOME/.kube/cluster1.config
-or
-export KUBECONFIG=$HOME/.kube/cluster2.config
-or
-export KUBECONFIG=$HOME/.kube/cluster3.config
+
 ```
 ```
 kubectl get nodes
@@ -73,24 +70,14 @@ kubectl get nodes
 **Or pass the custom file at execution time using the --kubeconfig flag:**
 ```
 kubectl --kubeconfig=$HOME/.kube/cluster1.config get nodes
-or
-kubectl --kubeconfig=$HOME/.kube/cluster2.config get nodes
-or
-kubectl --kubeconfig=$HOME/.kube/cluster3.config get nodes
+
 ```
 **11) From the jump machine you can do ssh to all cluster's node.**
 ```
 ssh cluster1-controlplane
 or
 ssh cluster1-node0
-or
-ssh cluster2-controlplane
-or
-ssh cluster2-node0
-or
-ssh cluster3-controlplane
-or
-ssh cluster3-node0
+
 ```
 **12) Now its time to run CKA Lab. To start the Lab you have to connect with two ssh connection on jump machine one for your Labs questions and second for your command execution. Now run below command to start Lab.**
 ```
