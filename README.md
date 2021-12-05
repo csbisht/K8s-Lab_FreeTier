@@ -85,5 +85,5 @@ ssh cluster1-node0
 ```
 
 ## **LICENSE**
-Distributed under the GNU General Public License v2.0. See [LICENSE](https://github.com/csbisht/K8s-Lab/blob/main/LICENSE) for more information.
+Distributed under the GNU General Public License v2.0. See [LICENSE](https://github.com/csbisht/K8s-Lab_FreeTier/blob/main/LICENSE) for more information.
 
