@@ -1,6 +1,6 @@
 #!/bin/bash
 
-getckalabscript=( `ls $HOME/K8s-Lab-Questions/Start_CKA_Lab*.sh |cut -d'/' -f5` )
+getckalabscript=( `ls $HOME/K8s-Lab-Questions_FreeTier/Start_CKA_Lab*.sh |cut -d'/' -f5` )
 
 
 echo -e "There are ${#getckalabscript[@]} CKA Labs right now"
@@ -16,7 +16,7 @@ checkusrout=`echo ${getckalabscript[@]} |grep -w Start_CKA_Lab"${CKA}".sh`
 usrout="$?"
 if [ "${usrout}" = 0 ];then
 ####run lab
-$HOME/K8s-Lab-Questions/Start_CKA_Lab"${CKA}".sh
+$HOME/K8s-Lab-Questions_FreeTier/Start_CKA_Lab"${CKA}".sh
 else
 echo "please re-run script and share correct lab number"
 fi
