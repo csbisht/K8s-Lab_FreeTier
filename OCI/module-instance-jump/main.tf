@@ -22,14 +22,14 @@ resource "oci_core_instance" "CreateInstance_jump" {
     create_vnic_details {
         subnet_id = "${var.subnet_id}"
     }
-  metadata = {
+  metadata {
     ssh_authorized_keys = file("${var.ssh_public_key}")
   }
    preserve_boot_volume = false
 
   provisioner "file" {
     source = "${var.ssh_private_key}"
-    destination = "~/.ssh/id_rsa"
+    destination = "/home/ubuntu/.ssh/id_rsa"
 
     connection {
       type        = "ssh"
@@ -56,7 +56,7 @@ resource "oci_core_instance" "CreateInstance_jump" {
       "sudo /tmp/sshkeepalive.sh",
       "sudo mv /tmp/Start_CKA_Lab.sh /home/ubuntu/",
       "sudo /tmp/clonegitrepo.sh",
-      "chmod 600 ~/.ssh/id_rsa",
+      "chmod 600 /home/ubuntu/.ssh/id_rsa",
     ]
     connection {
       type        = "ssh"
