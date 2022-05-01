@@ -22,7 +22,7 @@ resource "oci_core_instance" "CreateInstance_jump" {
     create_vnic_details {
         subnet_id = "${var.subnet_id}"
     }
-  metadata {
+  metadata = {
     ssh_authorized_keys = file("${var.ssh_public_key}")
   }
    preserve_boot_volume = false
